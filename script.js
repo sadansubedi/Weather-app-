@@ -8,9 +8,10 @@ const buttons = document.querySelector('button');
 const API_KEY =`ea6e48e90fddee0e1bb84738a2fe0b40`;
 
 
-const getweather =async (city)=>{ // async--> keep executing other line of code instead of waiting for it to complete before proceeding.
+const getweather =async (city)=>{ // async--> it  returned promises ok.
     const API_CALL_TO =`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}` //--> here &units=metric& gives temp in celcius ok default it is fareinheit 
-    const response = await fetch(API_CALL_TO);//await-->wait for returning promise ok
+    const response = await fetch(API_CALL_TO);//await-->keep executing other line of code instead of waiting for it to complete before proceeding
+                                                    //after completing other line of code now its turn
     //console.log(response);
     const data = await response.json();
     //console.log(data);
