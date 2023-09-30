@@ -5,7 +5,7 @@ const buttons = document.querySelector('button');
 //console.log(buttons);
 //console.log(search);
 //console.log(buttons);
-const API_KEY =`get_key from openweathermap.org ok`;
+const API_KEY =`ea6e48e90fddee0e1bb84738a2fe0b40`;
 
 
 const getweather =async (city)=>{ // async--> it  returned promises ok.
